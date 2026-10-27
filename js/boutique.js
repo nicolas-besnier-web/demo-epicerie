@@ -156,6 +156,44 @@
         if (ligne && !reduit) { ligne.classList.add("sort"); setTimeout(function () { changer(id, 0, 0); }, 260); } else changer(id, 0, 0);
       }
     });
+    // Glisser vers la droite pour fermer : le tiroir suit le doigt 1:1, puis part (ou revient) selon la vitesse du geste
+    var glisse = null;
+    tiroir.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" || e.target.closest("button, a, input, select")) return;
+      glisse = { x: e.clientX, y: e.clientY, t: e.timeStamp, dx: 0, v: 0, actif: false, id: e.pointerId, dernierX: e.clientX, dernierT: e.timeStamp };
+    });
+    tiroir.addEventListener("pointermove", function (e) {
+      if (!glisse || e.pointerId !== glisse.id) return;
+      var dx = e.clientX - glisse.x, dy = e.clientY - glisse.y;
+      if (!glisse.actif) {
+        if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
+        if (Math.abs(dy) > Math.abs(dx)) { glisse = null; return; }
+        glisse.actif = true; tiroir.setPointerCapture(e.pointerId); tiroir.style.transition = "none"; tiroir.style.animation = "none";
+      }
+      var dt = e.timeStamp - glisse.dernierT;
+      if (dt > 0) glisse.v = (e.clientX - glisse.dernierX) / dt;
+      glisse.dernierX = e.clientX; glisse.dernierT = e.timeStamp;
+      // au-delà du bord gauche, la résistance augmente (élastique)
+      glisse.dx = dx < 0 ? -(Math.abs(dx) * 0.4) / (1 + Math.abs(dx) / 200) : dx;
+      tiroir.style.transform = "translateX(" + glisse.dx + "px)";
+    });
+    function finGlisse(e) {
+      if (!glisse || e.pointerId !== glisse.id) return;
+      var g = glisse; glisse = null;
+      if (!g.actif) return;
+      var largeur = tiroir.getBoundingClientRect().width;
+      var projete = g.dx + g.v * 1000 * 0.12; // où le geste aurait fini son élan
+      tiroir.style.transition = reduit ? "none" : "transform .32s cubic-bezier(.22,.68,0,1)";
+      if (projete > largeur * 0.4 || g.v > 0.6) {
+        tiroir.style.transform = "translateX(100%)";
+        setTimeout(function () { tiroir.style.transition = ""; tiroir.style.transform = ""; tiroir.style.animation = ""; if (tiroir.open) tiroir.close(); }, reduit ? 0 : 300);
+      } else {
+        tiroir.style.transform = "translateX(0)";
+        setTimeout(function () { tiroir.style.transition = ""; tiroir.style.transform = ""; tiroir.style.animation = ""; }, reduit ? 0 : 340);
+      }
+    }
+    tiroir.addEventListener("pointerup", finGlisse);
+    tiroir.addEventListener("pointercancel", finGlisse);
     ecouteurs.push(function (id) {
       if (!tiroir.open) return;
       // Met à jour sans reconstruire quand c'est possible (pas de perte de focus)

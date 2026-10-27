@@ -320,6 +320,7 @@ select { width: auto; min-width: 11rem; padding-right: 2rem; }
 
 /* ---------- Panier : tiroir et page */
 .tiroir { position: fixed; inset: 0 0 0 auto; margin: 0 0 0 auto; width: min(27rem, 100%); max-width: 100%; height: 100dvh; max-height: none; padding: 0; border: 0; background: var(--sel); color: var(--encre); box-shadow: -20px 0 60px -30px rgb(0 0 0 / .5); overflow: hidden; }
+.tiroir { touch-action: pan-y; }
 .tiroir::backdrop { background: rgb(14 21 23 / .5); }
 .tiroir[open] { animation: tiroir-entre .42s var(--ease); }
 .tiroir[open]::backdrop { animation: fond-entre .35s ease-out; }
@@ -473,5 +474,12 @@ select { width: auto; min-width: 11rem; padding-right: 2rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .site-tete { background: var(--sel); backdrop-filter: none; }
+}
+@media (prefers-contrast: more) {
+  :root { --trait: var(--trait-fort); --encre-douce: var(--encre); }
+  .etiquette, .hero-etiquette { outline: 1px solid #2a2218; }
 }
 @media print { .bandeau-demo, .site-tete, .tiroir, .ajouter, .retour-haut { display: none !important; } .apparait { opacity: 1 !important; transform: none !important; } }

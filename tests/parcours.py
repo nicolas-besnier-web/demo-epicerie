@@ -28,7 +28,7 @@ def scenario(browser, nom, w, h, scheme, js=True, capt=False):
     # catalogue + filtre
     pg.goto(BASE + "catalogue.html"); pg.wait_for_timeout(300)
     verifie(not deborde(), f"{tag} catalogue sans débordement")
-    n = pg.locator(".produit").count(); verifie(n == 18, f"{tag} catalogue : 18 produits ({n})")
+    n = pg.locator(".produit").count(); verifie(n == 16, f"{tag} catalogue : 16 produits ({n})")
     if js:
         pg.click(".chips button[data-cat='biscuits']"); pg.wait_for_timeout(300)
         vis = pg.locator(".produit:not([hidden])").count(); verifie(vis == 3, f"{tag} filtre biscuits : 3 produits ({vis})")
@@ -42,10 +42,10 @@ def scenario(browser, nom, w, h, scheme, js=True, capt=False):
     else:
         cap("catalogue-sans-js", full=False)
     # fiche produit
-    pg.goto(BASE + "produit-caramel-beurre-sale.html"); pg.wait_for_timeout(300)
+    pg.goto(BASE + "produit-fondant-caramel.html"); pg.wait_for_timeout(300)
     verifie(not deborde(), f"{tag} fiche sans débordement")
-    verifie("Lait" in pg.inner_text(".fiche-infos"), f"{tag} fiche : allergènes présents")
-    verifie(pg.locator(".fiche strong", has_text="crème").count() >= 1, f"{tag} fiche : allergène en gras (INCO)")
+    verifie("Allergènes" in pg.inner_text(".fiche-infos"), f"{tag} fiche : allergènes présents")
+    verifie(pg.locator(".fiche strong", has_text="chocolat").count() >= 1, f"{tag} fiche : allergène en gras (INCO)")
     cap("fiche-produit")
     if js:
         pg.click(".quantite-plus"); pg.click("[data-achat] [data-ajouter]"); pg.wait_for_timeout(1000)
@@ -61,9 +61,9 @@ def scenario(browser, nom, w, h, scheme, js=True, capt=False):
         verifie(not deborde(), f"{tag} panier sans débordement")
         verifie(pg.inner_text("[data-panier-nb]") == "3", f"{tag} panier persistant (localStorage)")
         pg.click("[data-panier-page] [data-moins]"); pg.wait_for_timeout(200)
-        verifie("17,80" in pg.inner_text(".lignes").replace(" ", " ").replace(" ", " "), f"{tag} total ligne 2 × 8,90 = 17,80 €")
+        verifie("15,80" in pg.inner_text(".lignes").replace(" ", " ").replace(" ", " "), f"{tag} total ligne 2 × 7,90 = 15,80 €")
         cap("panier-page")
-        pg.click("text=Commander (démonstration)"); pg.wait_for_timeout(500)
+        pg.click("[data-panier-page] a.bouton"); pg.wait_for_timeout(500)
         # commande
         pg.click("[data-suivant]"); pg.wait_for_timeout(200)
         verifie(pg.locator("[data-erreur]:not([hidden])").count() >= 3, f"{tag} validation : erreurs affichées")

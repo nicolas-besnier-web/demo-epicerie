@@ -1,7 +1,25 @@
 {
   "actualites": [
-    { "date": "2026-10-20", "titre": "Les coffrets de fin d'année sont en boutique", "texte": "Trois coffrets, préparés à la main : Goûter breton, Petit-déjeuner et Bord de mer. Commandes ouvertes jusqu'au 15 décembre pour être livrés avant Noël.", "image": "assets/img/coffret-noeud.jpg", "alt": "Coffret cadeau noué d'un ruban noir" },
-    { "date": "2026-10-06", "titre": "Un nouveau café d'Éthiopie", "texte": "Un café lavé, fruité, aux notes de jasmin et d'agrumes. Il arrive en petite quantité : quand il n'y en a plus, il n'y en a plus.", "image": "assets/img/cafe-grains.jpg", "alt": "Gros plan sur des grains de café torréfiés" },
-    { "date": "2026-09-22", "titre": "Le kouign-amann est de retour", "texte": "Nous l'avions retiré cet été à cause de la chaleur. Il revient, toujours pur beurre, à réchauffer au four dix minutes.", "image": "assets/img/kouign-amann.jpg", "alt": "Croûte caramélisée d'un kouign-amann" }
+    {
+      "date": "2026-10-20",
+      "titre": "Les coffrets de fin d'année sont en boutique",
+      "texte": "Trois coffrets, préparés à la main : Goûter breton, Petit-déjeuner et Bord de mer. Commandes ouvertes jusqu'au 15 décembre pour être livrés avant Noël.",
+      "image": "assets/img/coffret-noeud.jpg",
+      "alt": "Coffret cadeau noué d'un ruban noir"
+    },
+    {
+      "date": "2026-10-06",
+      "titre": "Un nouveau café d'Éthiopie",
+      "texte": "Un café lavé, fruité, aux notes de jasmin et d'agrumes. Il arrive en petite quantité : quand il n'y en a plus, il n'y en a plus.",
+      "image": "assets/img/cafe-grains.jpg",
+      "alt": "Gros plan sur des grains de café torréfiés"
+    },
+    {
+      "date": "2026-09-22",
+      "titre": "Le kouign-amann est de retour",
+      "texte": "Nous l'avions retiré cet été à cause de la chaleur. Il revient, toujours pur beurre, à réchauffer au four dix minutes.",
+      "image": "assets/img/kouign-amann.jpg",
+      "alt": "Croûte caramélisée d'un kouign-amann"
+    }
   ]
 }

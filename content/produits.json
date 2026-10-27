@@ -1,31 +1,77 @@
 {
   "categories": [
-    { "id": "caramels", "titre": "Caramels et douceurs", "intro": "Le caramel au beurre salé, le kouign-amann, le far : ce qu'on croque au goûter.", "image": "assets/img/caramel-coulant.jpg", "alt": "Caramel au beurre salé qui coule d'un gâteau fondant, avec une cuillère" },
-    { "id": "biscuits", "titre": "Biscuits et galettes", "intro": "Palets pur beurre, sablés demi-sel et galettes de blé noir.", "image": "assets/img/palets-bretons.jpg", "alt": "Assiette de palets bretons" },
-    { "id": "mer", "titre": "Sardines et conserves de la mer", "intro": "Des boîtes à garder au placard et à ouvrir sans attendre.", "image": "assets/img/sardines-citron.jpg", "alt": "Boîte de sardines à l'huile d'olive et au citron" },
-    { "id": "confitures", "titre": "Confitures", "intro": "Cuites en petits chaudrons, avec peu de sucre.", "image": "assets/img/confiture-tartine.jpg", "alt": "Tartines de confiture de fraises" },
-    { "id": "sel", "titre": "Sel de Guérande", "intro": "Du sel récolté à la main dans les marais salants.", "image": "assets/img/marais-salants.jpg", "alt": "Marais salants de Guérande" },
-    { "id": "thes-cafes", "titre": "Thés et cafés", "intro": "Torréfiés ou mélangés en petites quantités, vendus en vrac ou en sachet.", "image": "assets/img/cafe-sac.jpg", "alt": "Sac de toile rempli de grains de café" },
-    { "id": "coffrets", "titre": "Coffrets cadeaux", "intro": "Préparés dans la boutique, prêts à offrir.", "image": "assets/img/coffret-noeud.jpg", "alt": "Coffret cadeau noué d'un ruban noir" }
+    {
+      "id": "caramels",
+      "titre": "Caramels et douceurs",
+      "intro": "Le fondant au caramel, le kouign-amann, le far : ce qu'on croque au goûter.",
+      "image": "assets/img/caramel-coulant.jpg",
+      "alt": "Caramel au beurre salé qui coule d'un gâteau fondant, avec une cuillère"
+    },
+    {
+      "id": "biscuits",
+      "titre": "Biscuits et galettes",
+      "intro": "Palets pur beurre, sablés demi-sel et galettes de blé noir.",
+      "image": "assets/img/palets-bretons.jpg",
+      "alt": "Assiette de palets bretons"
+    },
+    {
+      "id": "mer",
+      "titre": "Sardines et conserves de la mer",
+      "intro": "La boîte à garder au placard et à ouvrir sans attendre.",
+      "image": "assets/img/sardines-citron.jpg",
+      "alt": "Boîte de sardines à l'huile d'olive et au citron"
+    },
+    {
+      "id": "confitures",
+      "titre": "Confitures",
+      "intro": "Cuites en petits chaudrons, avec peu de sucre.",
+      "image": "assets/img/confiture-tartine.jpg",
+      "alt": "Tartines de confiture de fraises"
+    },
+    {
+      "id": "sel",
+      "titre": "Sel de Guérande",
+      "intro": "Du sel récolté à la main dans les marais salants.",
+      "image": "assets/img/marais-salants.jpg",
+      "alt": "Marais salants de Guérande"
+    },
+    {
+      "id": "thes-cafes",
+      "titre": "Thés et cafés",
+      "intro": "Torréfiés ou mélangés en petites quantités, vendus en vrac ou en sachet.",
+      "image": "assets/img/cafe-sac.jpg",
+      "alt": "Sac de toile rempli de grains de café"
+    },
+    {
+      "id": "coffrets",
+      "titre": "Coffrets cadeaux",
+      "intro": "Préparés dans la boutique, prêts à offrir.",
+      "image": "assets/img/coffret-noeud.jpg",
+      "alt": "Coffret cadeau noué d'un ruban noir"
+    }
   ],
   "produits": [
     {
-      "id": "caramel-beurre-sale",
+      "id": "fondant-caramel",
       "categorie": "caramels",
-      "nom": "Caramel au beurre salé",
-      "accroche": "Le pot qui part le premier.",
-      "description": "Un caramel coulant, cuit lentement au chaudron avec du beurre demi-sel et de la crème. À la cuillère, sur une crêpe, sur une glace à la vanille.",
-      "prix": 8.9,
-      "poidsG": 220,
-      "format": "Pot en verre de 220 g",
-      "ingredients": "Sucre, **crème** (38 %), **beurre** demi-sel (12 %), sel de Guérande, gousse de vanille.",
-      "allergenes": "Lait",
-      "sansGluten": true,
-      "conservation": "À l'abri de la lumière, 12 mois. Après ouverture, au frais et à consommer sous 1 mois.",
+      "nom": "Fondants chocolat, cœur caramel au beurre salé",
+      "accroche": "Le caramel coule dès la première cuillère.",
+      "description": "Deux fondants au chocolat noir, avec un cœur de caramel au beurre salé cuit au chaudron. À réchauffer quelques minutes : le caramel coule quand on entame le gâteau.",
+      "prix": 7.9,
+      "poidsG": 180,
+      "format": "Boîte de 2 fondants, 180 g",
+      "ingredients": "**Chocolat** noir (30 %), **beurre**, sucre, **œufs**, **farine de blé**, caramel au beurre salé (sucre, **crème**, **beurre** demi-sel, sel de Guérande).",
+      "allergenes": "Gluten (blé), lait, œufs",
+      "sansGluten": false,
+      "conservation": "Au frais, à consommer sous 5 jours. Se réchauffe 5 minutes au four.",
       "image": "assets/img/caramel-coulant.jpg",
-      "alt": "Caramel au beurre salé qui coule d'un gâteau fondant, avec une cuillère",
+      "alt": "Fondant au chocolat dont le caramel au beurre salé coule dans l'assiette, avec une cuillère",
       "momentane": true,
-      "associes": ["crepes-froment", "palets-pur-beurre", "cafe-grains-maison"]
+      "associes": [
+        "crepes-froment",
+        "palets-pur-beurre",
+        "cafe-grains-maison"
+      ]
     },
     {
       "id": "kouign-amann",
@@ -43,7 +89,11 @@
       "image": "assets/img/kouign-amann.jpg",
       "alt": "Gros plan sur la croûte caramélisée d'un kouign-amann",
       "momentane": true,
-      "associes": ["caramel-beurre-sale", "far-breton-pruneaux", "cafe-grains-maison"]
+      "associes": [
+        "fondant-caramel",
+        "far-breton-pruneaux",
+        "cafe-grains-maison"
+      ]
     },
     {
       "id": "far-breton-pruneaux",
@@ -61,7 +111,10 @@
       "image": "assets/img/far-breton.jpg",
       "alt": "Far breton doré sur un plat",
       "momentane": false,
-      "associes": ["kouign-amann", "the-noir-maison"]
+      "associes": [
+        "kouign-amann",
+        "the-noir-maison"
+      ]
     },
     {
       "id": "crepes-froment",
@@ -79,7 +132,10 @@
       "image": "assets/img/crepes-miel.jpg",
       "alt": "Crêpes garnies d'orange et de miel dans des assiettes",
       "momentane": false,
-      "associes": ["caramel-beurre-sale", "confiture-fraises"]
+      "associes": [
+        "fondant-caramel",
+        "confiture-fraises"
+      ]
     },
     {
       "id": "palets-pur-beurre",
@@ -97,7 +153,11 @@
       "image": "assets/img/palets-bretons.jpg",
       "alt": "Palets bretons dorés posés sur une assiette blanche",
       "momentane": true,
-      "associes": ["sables-demi-sel", "the-noir-maison", "caramel-beurre-sale"]
+      "associes": [
+        "sables-demi-sel",
+        "the-noir-maison",
+        "fondant-caramel"
+      ]
     },
     {
       "id": "sables-demi-sel",
@@ -115,7 +175,10 @@
       "image": "assets/img/sables-nature.jpg",
       "alt": "Sablés ronds dorés sur une plaque de cuisson",
       "momentane": false,
-      "associes": ["palets-pur-beurre", "confiture-fraises"]
+      "associes": [
+        "palets-pur-beurre",
+        "confiture-fraises"
+      ]
     },
     {
       "id": "galettes-ble-noir",
@@ -133,7 +196,10 @@
       "image": "assets/img/galette-ble-noir.jpg",
       "alt": "Galette de blé noir garnie d'un œuf et de jambon",
       "momentane": false,
-      "associes": ["sardines-citron", "sel-fleur-de-guerande"]
+      "associes": [
+        "sardines-citron",
+        "sel-fleur-de-guerande"
+      ]
     },
     {
       "id": "sardines-citron",
@@ -151,25 +217,11 @@
       "image": "assets/img/sardines-citron.jpg",
       "alt": "Boîte ouverte de sardines à l'huile d'olive avec du citron",
       "momentane": true,
-      "associes": ["galettes-ble-noir", "sel-fleur-de-guerande", "sardines-plage"]
-    },
-    {
-      "id": "sardines-plage",
-      "categorie": "mer",
-      "nom": "Sardines à l'huile d'olive, nature",
-      "accroche": "Rien d'autre que le poisson et l'huile.",
-      "description": "La recette la plus simple : sardines, huile, une pincée de sel. Pour la plage, le pique-nique ou une tartine.",
-      "prix": 5.6,
-      "poidsG": 115,
-      "format": "Boîte de 115 g, 85 g égouttées",
-      "ingredients": "**Sardines** (65 %), huile d'olive vierge extra, sel.",
-      "allergenes": "Poisson",
-      "sansGluten": true,
-      "conservation": "Dans un endroit sec, jusqu'à 5 ans.",
-      "image": "assets/img/sardines-plage.jpg",
-      "alt": "Boîte de sardines ouverte posée sur le sable avec une fourchette",
-      "momentane": false,
-      "associes": ["sardines-citron", "sel-fleur-de-guerande"]
+      "associes": [
+        "galettes-ble-noir",
+        "sel-fleur-de-guerande",
+        "coffret-mer"
+      ]
     },
     {
       "id": "confiture-fraises",
@@ -187,25 +239,11 @@
       "image": "assets/img/confiture-tartine.jpg",
       "alt": "Deux tartines de confiture de fraises sur une planche en bois",
       "momentane": false,
-      "associes": ["confiture-fraises-lot", "crepes-froment", "sables-demi-sel"]
-    },
-    {
-      "id": "confiture-fraises-lot",
-      "categorie": "confitures",
-      "nom": "Confiture de fraises, lot de 3 pots",
-      "accroche": "Pour ne pas manquer avant l'été.",
-      "description": "Trois pots de notre confiture de fraises au prix de deux et demi. Pratique pour offrir ou pour la réserve.",
-      "prix": 19.5,
-      "poidsG": 750,
-      "format": "3 pots en verre de 250 g",
-      "ingredients": "Fraises (55 %), sucre, jus de citron.",
-      "allergenes": "Aucun",
-      "sansGluten": true,
-      "conservation": "À l'abri de la lumière, 18 mois. Après ouverture, au frais et à consommer sous 1 mois.",
-      "image": "assets/img/confiture-tartine.jpg",
-      "alt": "Deux tartines de confiture de fraises sur une planche en bois",
-      "momentane": false,
-      "associes": ["confiture-fraises", "crepes-froment"]
+      "associes": [
+        "crepes-froment",
+        "sables-demi-sel",
+        "fondant-caramel"
+      ]
     },
     {
       "id": "sel-fleur-de-guerande",
@@ -223,7 +261,10 @@
       "image": "assets/img/marais-salants.jpg",
       "alt": "Marais salants de Guérande à marée basse",
       "momentane": true,
-      "associes": ["sardines-citron", "caramel-beurre-sale"]
+      "associes": [
+        "sardines-citron",
+        "galettes-ble-noir"
+      ]
     },
     {
       "id": "the-noir-maison",
@@ -241,7 +282,10 @@
       "image": "assets/img/the-vrac.jpg",
       "alt": "Bols en terre cuite remplis de feuilles de thé",
       "momentane": false,
-      "associes": ["palets-pur-beurre", "far-breton-pruneaux"]
+      "associes": [
+        "palets-pur-beurre",
+        "far-breton-pruneaux"
+      ]
     },
     {
       "id": "cafe-grains-maison",
@@ -259,7 +303,11 @@
       "image": "assets/img/cafe-sac.jpg",
       "alt": "Sac de toile rempli de grains de café avec une petite pelle en bois",
       "momentane": false,
-      "associes": ["cafe-ethiopie", "kouign-amann", "caramel-beurre-sale"]
+      "associes": [
+        "cafe-ethiopie",
+        "kouign-amann",
+        "fondant-caramel"
+      ]
     },
     {
       "id": "cafe-ethiopie",
@@ -277,7 +325,10 @@
       "image": "assets/img/cafe-grains.jpg",
       "alt": "Gros plan sur des grains de café torréfiés",
       "momentane": true,
-      "associes": ["cafe-grains-maison", "sables-demi-sel"]
+      "associes": [
+        "cafe-grains-maison",
+        "sables-demi-sel"
+      ]
     },
     {
       "id": "coffret-gouter",
@@ -288,7 +339,12 @@
       "prix": 29,
       "poidsG": null,
       "format": "Coffret en carton, environ 750 g",
-      "contenu": ["Palets bretons pur beurre, 250 g", "Sablés nature au beurre demi-sel, 200 g", "Caramel au beurre salé, 220 g", "Thé noir de la maison, 100 g"],
+      "contenu": [
+        "Palets bretons pur beurre, 250 g",
+        "Sablés nature au beurre demi-sel, 200 g",
+        "Confiture de fraises, 250 g",
+        "Thé noir de la maison, 100 g"
+      ],
       "ingredients": "Voir la fiche de chaque produit du coffret.",
       "allergenes": "Gluten (blé), lait, œufs",
       "sansGluten": false,
@@ -296,7 +352,10 @@
       "image": "assets/img/palets-boite.jpg",
       "alt": "Boîte métallique ouverte, remplie de palets bretons",
       "momentane": true,
-      "associes": ["coffret-petit-dejeuner", "coffret-mer"]
+      "associes": [
+        "coffret-petit-dejeuner",
+        "coffret-mer"
+      ]
     },
     {
       "id": "coffret-petit-dejeuner",
@@ -307,7 +366,12 @@
       "prix": 34,
       "poidsG": null,
       "format": "Coffret papier kraft, environ 900 g",
-      "contenu": ["Crêpes de froment, sachet de 8", "Caramel au beurre salé, 220 g", "Confiture de fraises, 250 g", "Café en grains, mélange de la maison, 250 g"],
+      "contenu": [
+        "Crêpes de froment, sachet de 8",
+        "Fondants chocolat, cœur caramel au beurre salé, 180 g",
+        "Confiture de fraises, 250 g",
+        "Café en grains, mélange de la maison, 250 g"
+      ],
       "ingredients": "Voir la fiche de chaque produit du coffret.",
       "allergenes": "Gluten (blé), lait, œufs",
       "sansGluten": false,
@@ -315,26 +379,37 @@
       "image": "assets/img/coffret-noeud.jpg",
       "alt": "Coffret cadeau en papier kraft noué d'un ruban noir",
       "momentane": true,
-      "associes": ["coffret-gouter", "coffret-mer"]
+      "associes": [
+        "coffret-gouter",
+        "coffret-mer"
+      ]
     },
     {
       "id": "coffret-mer",
       "categorie": "coffrets",
       "nom": "Coffret Bord de mer",
       "accroche": "Pour l'apéritif, sans rien cuisiner.",
-      "description": "Deux boîtes de sardines, des galettes de blé noir, de la fleur de sel et un thé noir. L'idée : un dîner simple, à improviser.",
+      "description": "Des sardines, des galettes de blé noir, de la fleur de sel et un thé noir. L'idée : un dîner simple, à improviser.",
       "prix": 32,
       "poidsG": null,
       "format": "Coffret en carton, environ 600 g",
-      "contenu": ["Sardines à l'huile d'olive et au citron, 115 g", "Sardines à l'huile d'olive, nature, 115 g", "Galettes de blé noir, sachet de 8", "Fleur de sel de Guérande, 125 g"],
+      "contenu": [
+        "Sardines à l'huile d'olive et au citron, 115 g",
+        "Galettes de blé noir, sachet de 8",
+        "Fleur de sel de Guérande, 125 g",
+        "Thé noir de la maison, 100 g"
+      ],
       "ingredients": "Voir la fiche de chaque produit du coffret.",
       "allergenes": "Poisson",
       "sansGluten": false,
       "conservation": "Au sec. Les galettes sont à garder au frais.",
-      "image": "assets/img/phare-bretagne.jpg",
-      "alt": "Phare de Bretagne au bord de la mer, ciel gris",
+      "image": "assets/img/sardines-plage.jpg",
+      "alt": "Boîte de sardines ouverte posée sur le sable avec une fourchette",
       "momentane": false,
-      "associes": ["coffret-gouter", "coffret-petit-dejeuner"]
+      "associes": [
+        "coffret-gouter",
+        "coffret-petit-dejeuner"
+      ]
     }
   ]
 }

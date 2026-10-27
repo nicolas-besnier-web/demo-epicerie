@@ -231,7 +231,7 @@ function ficheProduit(p) {
       <p class="fiche-accroche">${esc(p.accroche || "")}</p>
       <div class="fiche-prix">
         <span class="etiquette etiquette-grande"><span class="etiquette-prix">${esc(prixTexte(p.prix))}</span></span>
-        <p class="fiche-prix-detail">TTC${p.poidsG ? `, ${esc(p.format)}` : `, ${esc(p.format)}`}${kilo ? `<br><span class="kilo">${esc(kilo)}</span>` : ""}</p>
+        <p class="fiche-prix-detail">Prix TTC. ${esc(p.format)}${kilo ? `<br><span class="kilo">${esc(kilo)}</span>` : ""}</p>
       </div>
       <div class="fiche-achat" data-achat>
         <div class="quantite" role="group" aria-label="Quantité" data-quantite hidden>
@@ -254,8 +254,7 @@ function ficheProduit(p) {
         ${p.sansGluten ? `<p>Recette sans ingrédient contenant du gluten.</p>` : ""}
       </details>
       <details class="fiche-detail"><summary>Conservation</summary><p>${esc(p.conservation)}</p></details>
-      <p class="fiche-demo">Produit fictif, présenté à titre d'exemple : il ne peut pas être acheté.</p>
-    </div>
+          </div>
   </article>
   ${assoc.length ? `<section class="associes" aria-labelledby="t-associes"><h2 id="t-associes">Ils vont bien ensemble</h2>
     <ul class="grille-produits">\n      ${assoc.map((x, i) => carte(x, i)).join("\n      ")}\n    </ul></section>` : ""}

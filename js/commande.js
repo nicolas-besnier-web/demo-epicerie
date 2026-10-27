@@ -25,13 +25,14 @@
     if (pl) pl.textContent = textePrix(M.frais(sous));
   }
 
-  function montrer(i, retour) {
+  function montrer(i, retour, sansFocus) {
     etapes.forEach(function (s, k) { s.hidden = k !== i; s.classList.remove("entre", "entre-retour"); });
     var s = etapes[i];
     if (!M.reduit) { void s.offsetWidth; s.classList.add(retour ? "entre-retour" : "entre"); }
     indic.forEach(function (li, k) { li.classList.toggle("fait", k < i); li.classList.toggle("courante", k === i); if (k === i) li.setAttribute("aria-current", "step"); else li.removeAttribute("aria-current"); });
     courante = i;
     if (i === 2) rendreRecap();
+    if (sansFocus) return;
     var titre = s.querySelector("legend");
     if (titre) { titre.setAttribute("tabindex", "-1"); titre.focus({ preventScroll: true }); }
     var haut = form.getBoundingClientRect().top + window.scrollY - 110;
@@ -96,5 +97,5 @@
   M.surChangement(majResume);
   if (!Object.keys(M.get()).length) { majResume(); return; }
   majResume();
-  montrer(0, false);
+  montrer(0, false, true);
 })();

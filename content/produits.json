@@ -1,6 +1,6 @@
 {
   "categories": [
-    { "id": "caramels", "titre": "Caramels et douceurs", "intro": "Le caramel au beurre salé, le kouign-amann, le far : ce qu'on croque au goûter.", "image": "assets/img/caramel-pots.jpg", "alt": "Pots de caramel au beurre salé alignés" },
+    { "id": "caramels", "titre": "Caramels et douceurs", "intro": "Le caramel au beurre salé, le kouign-amann, le far : ce qu'on croque au goûter.", "image": "assets/img/caramel-coulant.jpg", "alt": "Caramel au beurre salé qui coule d'un gâteau fondant, avec une cuillère" },
     { "id": "biscuits", "titre": "Biscuits et galettes", "intro": "Palets pur beurre, sablés demi-sel et galettes de blé noir.", "image": "assets/img/palets-bretons.jpg", "alt": "Assiette de palets bretons" },
     { "id": "mer", "titre": "Sardines et conserves de la mer", "intro": "Des boîtes à garder au placard et à ouvrir sans attendre.", "image": "assets/img/sardines-citron.jpg", "alt": "Boîte de sardines à l'huile d'olive et au citron" },
     { "id": "confitures", "titre": "Confitures", "intro": "Cuites en petits chaudrons, avec peu de sucre.", "image": "assets/img/confiture-tartine.jpg", "alt": "Tartines de confiture de fraises" },
@@ -22,8 +22,8 @@
       "allergenes": "Lait",
       "sansGluten": true,
       "conservation": "À l'abri de la lumière, 12 mois. Après ouverture, au frais et à consommer sous 1 mois.",
-      "image": "assets/img/caramel-pots.jpg",
-      "alt": "Pots de caramel au beurre salé alignés",
+      "image": "assets/img/caramel-coulant.jpg",
+      "alt": "Caramel au beurre salé qui coule d'un gâteau fondant, avec une cuillère",
       "momentane": true,
       "associes": ["crepes-froment", "palets-pur-beurre", "cafe-grains-maison"]
     },

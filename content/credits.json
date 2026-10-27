@@ -137,15 +137,6 @@
       "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
     },
     {
-      "fichier": "assets/img/confitures-rayon.jpg",
-      "description": "Confitures sur une étagère",
-      "auteur": "Benh LIEU SONG",
-      "source": "Wikimedia Commons",
-      "lien": "https://commons.wikimedia.org/wiki/File:Confiture_(8279647962).jpg",
-      "licence": "CC BY-SA 2.0",
-      "licenceLien": "https://creativecommons.org/licenses/by-sa/2.0/deed.fr"
-    },
-    {
       "fichier": "assets/img/marais-salants.jpg",
       "description": "Marais salants de Guérande",
       "auteur": "Nono vlf",
@@ -155,13 +146,13 @@
       "licenceLien": "https://creativecommons.org/licenses/by-sa/3.0/deed.fr"
     },
     {
-      "fichier": "assets/img/caramel-pots.jpg",
-      "description": "Pots de caramel au beurre salé (recadrée)",
-      "auteur": "Arnaud 25",
-      "source": "Wikimedia Commons",
-      "lien": "https://commons.wikimedia.org/wiki/File:Caramel_au_beurre_salé_03.jpg",
-      "licence": "CC BY-SA 4.0",
-      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+      "fichier": "assets/img/caramel-coulant.jpg",
+      "description": "Caramel coulant sur un gâteau fondant (recadrée)",
+      "auteur": "Jennifer Schmidt",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/gHm50qaMaXc",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
     }
   ]
 }

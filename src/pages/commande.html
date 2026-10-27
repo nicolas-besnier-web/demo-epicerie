@@ -1,0 +1,62 @@
+---
+title: Commande de démonstration | Marée Salée
+description: Parcours de commande factice de la boutique Marée Salée : coordonnées, livraison, récapitulatif. Aucun paiement.
+classe: page-commande
+scripts: commande
+---
+<div class="entete-page">
+  <div class="conteneur">
+    <p class="surtitre">Démonstration</p>
+    <h1>Votre commande</h1>
+    <p class="chapeau">Ce parcours est un exemple : rien n'est envoyé, rien n'est payé. Vous pouvez saisir des données inventées.</p>
+  </div>
+</div>
+<section class="bloc">
+  <div class="conteneur commande">
+    <noscript><p class="note">Le parcours de commande a besoin de JavaScript. Voici <a href="commande-terminee.html">la page finale de la démonstration</a>.</p></noscript>
+    <div class="commande-vide" data-commande-vide hidden>
+      <p>Votre panier est vide, il n'y a donc rien à commander.</p>
+      <p><a class="bouton" href="catalogue.html">Voir l'épicerie {{icone:fleche}}</a></p>
+    </div>
+    <form class="commande-form" data-commande novalidate hidden>
+      <ol class="etapes-indic" data-indic aria-label="Étapes de la commande">
+        <li data-i="0">Coordonnées</li><li data-i="1">Livraison</li><li data-i="2">Récapitulatif</li>
+      </ol>
+
+      <fieldset class="etape" data-etape="0">
+        <legend>Vos coordonnées</legend>
+        <div class="grille-champs">
+          <div class="champ"><label for="prenom">Prénom</label><input id="prenom" name="prenom" autocomplete="given-name" required><p class="erreur" data-erreur hidden></p></div>
+          <div class="champ"><label for="nom">Nom</label><input id="nom" name="nom" autocomplete="family-name" required><p class="erreur" data-erreur hidden></p></div>
+          <div class="champ"><label for="email">Adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="erreur" data-erreur hidden></p></div>
+          <div class="champ"><label for="tel">Téléphone <span class="facultatif">(facultatif)</span></label><input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
+        </div>
+        <p class="aide">Rien n'est envoyé ni enregistré : inventez les valeurs si vous voulez.</p>
+        <p class="commande-actions"><button type="button" class="bouton" data-suivant>Continuer vers la livraison {{icone:fleche}}</button></p>
+      </fieldset>
+
+      <fieldset class="etape" data-etape="1" hidden>
+        <legend>Livraison</legend>
+        <div class="choix">
+          <label class="choix-carte"><input type="radio" name="mode" value="retrait" checked><span class="choix-corps"><strong>Retrait en boutique</strong><span>{{livraison.retrait}}, à {{site.rue}}</span></span><span class="choix-prix">Gratuit</span></label>
+          <label class="choix-carte"><input type="radio" name="mode" value="livraison"><span class="choix-corps"><strong>Livraison à domicile</strong><span>{{livraison.delai}}, en France métropolitaine</span></span><span class="choix-prix" data-prix-livraison>{{livraison.frais}}</span></label>
+        </div>
+        <div class="grille-champs adresse" data-adresse hidden>
+          <div class="champ champ-large"><label for="rue">Adresse</label><input id="rue" name="rue" autocomplete="street-address"><p class="erreur" data-erreur hidden></p></div>
+          <div class="champ"><label for="cp">Code postal</label><input id="cp" name="cp" autocomplete="postal-code" inputmode="numeric" maxlength="5"><p class="erreur" data-erreur hidden></p></div>
+          <div class="champ"><label for="ville">Ville</label><input id="ville" name="ville" autocomplete="address-level2"><p class="erreur" data-erreur hidden></p></div>
+        </div>
+        <p class="commande-actions"><button type="button" class="bouton bouton-discret" data-precedent>Retour</button><button type="button" class="bouton" data-suivant>Voir le récapitulatif {{icone:fleche}}</button></p>
+      </fieldset>
+
+      <fieldset class="etape" data-etape="2" hidden>
+        <legend>Récapitulatif</legend>
+        <div class="recap" data-recap aria-live="polite"></div>
+        <p class="avis-demo" role="note"><strong>Démonstration :</strong> en validant, aucune commande n'est passée et aucun paiement n'est demandé. Il n'y a pas de champ de carte bancaire.</p>
+        <div class="champ champ-case"><label class="case"><input type="checkbox" name="cgv" required><span>J'ai lu les <a href="cgv.html">conditions générales de vente</a> (exemple).</span></label><p class="erreur" data-erreur hidden></p></div>
+        <p class="commande-actions"><button type="button" class="bouton bouton-discret" data-precedent>Retour</button><button type="submit" class="bouton">Valider la démonstration</button></p>
+      </fieldset>
+    </form>
+    <aside class="commande-resume" data-resume aria-label="Votre panier" hidden></aside>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+<footer class="site-pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <a class="marque marque-pied" href="index.html">{{logo}}<span class="marque-nom">{{site.nom}}</span></a>
+      <p>Une épicerie fine de produits bretons, à Rennes. Retrait en boutique ou livraison à la maison.</p>
+      <p class="pied-demo">Boutique fictive : l'enseigne, l'équipe, l'adresse et les produits sont imaginaires.</p>
+    </div>
+    <div>
+      <h2>La boutique</h2>
+      <address>{{site.rue}}<br>{{site.codePostalVille}}<br><span>{{site.mentionAdresse}}</span></address>
+      <ul class="pied-liens">
+        <li>{{site.telephone}}</li>
+        <li>{{site.email}}</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Horaires</h2>
+      {{horaires}}
+    </div>
+    <div>
+      <h2>Informations</h2>
+      <ul class="pied-liens">
+        <li><a href="livraison-retours.html">Livraison et retours</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cgv.html">Conditions de vente</a></li>
+        <li><a href="mentions-legales.html">Mentions légales et crédits</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>{{site.piedDemo}}</p>
+    <a class="retour-haut" href="#contenu">Retour en haut {{icone:haut}}</a>
+  </div>
+</footer>

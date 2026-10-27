@@ -1,0 +1,167 @@
+{
+  "note": "Les photos illustrent l'ambiance : ce sont des photos libres, pas celles des produits d'une vraie boutique.",
+  "credits": [
+    {
+      "fichier": "assets/img/sables-nature.jpg",
+      "description": "Sablés sur une plaque de cuisson",
+      "auteur": "Glen Carrie",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/BYNwN4Wrn2I",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/cafe-sac.jpg",
+      "description": "Sac de toile rempli de café en grains",
+      "auteur": "Sergey Kotenev",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/UK6tuYeWq-E",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/cafe-grains.jpg",
+      "description": "Grains de café torréfiés",
+      "auteur": "Indra Projects",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/H80RH1Hhvu8",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/coffret-noeud.jpg",
+      "description": "Coffret cadeau noué d'un ruban",
+      "auteur": "Fiona Murray-deGraaff",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/KrS40Ohe1is",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/confiture-tartine.jpg",
+      "description": "Tartines de confiture de fraises",
+      "auteur": "Jonathan Pielmayer",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/c69HK1HKHYs",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/crepes-miel.jpg",
+      "description": "Crêpes à l'orange et au miel",
+      "auteur": "Monika Grabkowska",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/jsgJtBOR6jY",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/sardines-plage.jpg",
+      "description": "Boîte de sardines sur le sable",
+      "auteur": "Alla Hetman",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/RLT6bqMDiJo",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/phare-bretagne.jpg",
+      "description": "Phare sur la côte bretonne",
+      "auteur": "Kevin Mueller",
+      "source": "Unsplash",
+      "lien": "https://unsplash.com/photos/e3fNaRz31Rs",
+      "licence": "Licence Unsplash",
+      "licenceLien": "https://unsplash.com/license"
+    },
+    {
+      "fichier": "assets/img/sardines-citron.jpg",
+      "description": "Boîte de sardines au citron",
+      "auteur": "Pannet",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Canned_sardines_with_lemon.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/palets-bretons.jpg",
+      "description": "Palets bretons",
+      "auteur": "Arnaud 25",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Palet_breton_02.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/palets-boite.jpg",
+      "description": "Palets bretons dans une boîte",
+      "auteur": "Arnaud 25",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Palet_breton_01.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/far-breton.jpg",
+      "description": "Far breton",
+      "auteur": "Arnaud 25",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Far_breton_01.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/galette-ble-noir.jpg",
+      "description": "Galette de blé noir",
+      "auteur": "Arnaud 25",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Galette_de_sarrasin_complète_bretonne.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/kouign-amann.jpg",
+      "description": "Kouign-amann, gros plan",
+      "auteur": "RAIL P (RAIL.PHOTOGRAPHY)",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Kouign_amann_closeup.jpg",
+      "licence": "CC0",
+      "licenceLien": "https://creativecommons.org/publicdomain/zero/1.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/the-vrac.jpg",
+      "description": "Thés en vrac dans des bols",
+      "auteur": "Aleda12",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Still_life_with_tea_leaves_in_ceramic_cups.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/confitures-rayon.jpg",
+      "description": "Confitures sur une étagère",
+      "auteur": "Benh LIEU SONG",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Confiture_(8279647962).jpg",
+      "licence": "CC BY-SA 2.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/2.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/marais-salants.jpg",
+      "description": "Marais salants de Guérande",
+      "auteur": "Nono vlf",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Marais_salants_de_Guérande.jpg",
+      "licence": "CC BY-SA 3.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/3.0/deed.fr"
+    },
+    {
+      "fichier": "assets/img/caramel-pots.jpg",
+      "description": "Pots de caramel au beurre salé (recadrée)",
+      "auteur": "Arnaud 25",
+      "source": "Wikimedia Commons",
+      "lien": "https://commons.wikimedia.org/wiki/File:Caramel_au_beurre_salé_03.jpg",
+      "licence": "CC BY-SA 4.0",
+      "licenceLien": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+---
+title: Marée Salée | Épicerie fine bretonne à Rennes (démonstration)
+description: Boutique fictive d'épicerie fine bretonne à Rennes : caramel au beurre salé, biscuits, sardines, sel de Guérande, thés et cafés, coffrets. Site de démonstration réalisé par BALD.
+classe: page-accueil
+---
+<section class="hero">
+  <div class="conteneur hero-grille">
+    <div class="hero-texte">
+      <p class="surtitre">Épicerie fine · Rennes</p>
+      <h1>Caramel salé, sardines, sablés pur beurre.</h1>
+      <p class="chapeau">Une épicerie de quartier qui ne vend que de la Bretagne : des pots, des boîtes et des paquets choisis un à un, à retirer en boutique ou à recevoir chez vous.</p>
+      <p class="hero-actions"><a class="bouton" href="catalogue.html">Entrer dans l'épicerie {{icone:fleche}}</a><a class="lien-fleche" href="catalogue.html#cat-coffrets">Voir les coffrets</a></p>
+    </div>
+    <div class="hero-photos">
+      <figure class="hero-grande"><img src="assets/img/700/sables-nature.jpg" srcset="assets/img/700/sables-nature.jpg 700w, assets/img/sables-nature.jpg 1400w" sizes="(min-width: 60rem) 36vw, 92vw" width="1400" height="2100" alt="Sablés dorés sur une plaque de cuisson" fetchpriority="high"></figure>
+      <figure class="hero-petite"><img src="assets/img/700/sardines-citron.jpg" width="700" height="484" alt="Boîte ouverte de sardines à l'huile d'olive" loading="lazy"></figure>
+      <a class="hero-etiquette" href="produit-palets-pur-beurre.html"><span>Palets bretons pur beurre</span><strong>7,90&nbsp;€</strong></a>
+    </div>
+  </div>
+</section>
+
+<section class="promesses" aria-label="Nos engagements de service">
+  <ul class="conteneur">
+    <li><strong>Retrait gratuit</strong> en boutique, prêt en 2 heures</li>
+    <li><strong>Livraison offerte</strong> dès {{livraison.seuil}}</li>
+    <li><strong>Une carte écrite à la main</strong> dans chaque coffret</li>
+  </ul>
+</section>
+
+<section class="bloc" aria-labelledby="t-moment">
+  <div class="conteneur">
+    <div class="bloc-tete">
+      <h2 id="t-moment">En ce moment</h2>
+      <a class="lien-fleche" href="catalogue.html">Toute l'épicerie {{icone:fleche}}</a>
+    </div>
+    {{cartes:moment}}
+  </div>
+</section>
+
+<section class="bloc bloc-index" aria-labelledby="t-rayons">
+  <div class="conteneur">
+    <div class="bloc-tete"><h2 id="t-rayons">Les rayons</h2></div>
+    {{categories}}
+  </div>
+</section>
+
+<section class="bloc bloc-sombre" id="coffrets" aria-labelledby="t-coffrets">
+  <div class="conteneur">
+    <div class="bloc-tete">
+      <h2 id="t-coffrets">Coffrets cadeaux</h2>
+      <p class="bloc-intro">Préparés dans la boutique, avec une carte écrite à la main. Commandes ouvertes jusqu'au 15 décembre pour Noël.</p>
+    </div>
+    {{coffrets}}
+  </div>
+</section>
+
+<section class="bloc histoire" aria-labelledby="t-histoire">
+  <div class="conteneur histoire-grille">
+    <figure class="histoire-photo"><img src="assets/img/700/phare-bretagne.jpg" srcset="assets/img/700/phare-bretagne.jpg 700w, assets/img/phare-bretagne.jpg 1400w" sizes="(min-width: 56rem) 38vw, 92vw" width="1400" height="2100" alt="Phare au bord de la mer en Bretagne, ciel gris" loading="lazy"><figcaption>Photo d'illustration.</figcaption></figure>
+    <div class="histoire-texte">
+      <p class="surtitre">La maison</p>
+      <h2 id="t-histoire">Une cave à bocaux, une table en bois, une carte au crayon.</h2>
+      <p>Marée Salée est née d'une envie simple : trouver à Rennes tout ce qu'on rapporte de Bretagne en vacances, sans avoir à y retourner. Le caramel vient d'un chaudron, les sardines d'une conserverie de la côte, le sel d'un marais.</p>
+      <p>Chaque produit est goûté à la boutique avant d'entrer au catalogue. Ceux qui ne passent pas le test restent chez le fabricant.</p>
+      <p class="note-fictive">Cette maison est imaginaire : elle a été inventée pour la démonstration.</p>
+      <p><a class="lien-fleche" href="a-propos.html">Lire l'histoire de la maison {{icone:fleche}}</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc retrait" aria-labelledby="t-retrait">
+  <div class="conteneur retrait-grille">
+    <div>
+      <p class="surtitre">Retrait en boutique</p>
+      <h2 id="t-retrait">Commandez le matin, passez l'après-midi.</h2>
+      <ol class="etapes-retrait">
+        <li><strong>1.</strong> Vous composez votre panier et choisissez « Retrait en boutique ».</li>
+        <li><strong>2.</strong> Nous préparons la commande en 2 heures, du mardi au samedi.</li>
+        <li><strong>3.</strong> Vous passez la chercher, c'est gratuit.</li>
+      </ol>
+    </div>
+    <div class="retrait-carte">
+      <h3>La boutique</h3>
+      <address>{{site.rue}}<br>{{site.codePostalVille}} <span>{{site.mentionAdresse}}</span></address>
+      {{horaires}}
+    </div>
+  </div>
+</section>

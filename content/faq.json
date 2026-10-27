@@ -1,0 +1,13 @@
+{
+  "questions": [
+    { "question": "Cette boutique est-elle réelle ?", "reponse": "Non. Marée Salée est une boutique fictive, créée par BALD pour montrer ce qu'une vraie boutique en ligne peut donner. Aucune commande n'est possible et aucun paiement n'est demandé." },
+    { "question": "Comment retirer ma commande en boutique ?", "reponse": "Choisissez « Retrait en boutique » au moment de la commande. Elle est prête en 2 heures du mardi au samedi, et le retrait est gratuit. Sur une vraie boutique, vous recevriez un e-mail pour vous prévenir.\nRappel : ici, l'adresse est fictive." },
+    { "question": "Quels sont les frais de livraison ?", "reponse": "5,90 € pour une commande en France métropolitaine, et la livraison est offerte à partir de 60 € d'achats. Le retrait en boutique est toujours gratuit." },
+    { "question": "En combien de temps suis-je livré ?", "reponse": "Comptez 2 à 3 jours ouvrés après la préparation du colis. Les produits frais (far, kouign-amann, crêpes) voyagent dans un emballage isotherme." },
+    { "question": "Où trouver les ingrédients et les allergènes ?", "reponse": "Sur chaque fiche produit, dans l'encadré « Ingrédients et allergènes ». Les allergènes sont écrits en **gras** dans la liste des ingrédients. En cas de doute, appelez la boutique avant de commander." },
+    { "question": "Les produits « sans gluten » le sont-ils vraiment ?", "reponse": "Le filtre « sans gluten » repère les produits dont la recette ne contient aucun ingrédient à base de gluten. Sur une vraie boutique, chaque mention serait vérifiée auprès du fabricant, notamment pour les traces." },
+    { "question": "Puis-je retourner un produit ?", "reponse": "Vous avez 14 jours pour changer d'avis, sauf pour les denrées périssables et les produits descellés, qui ne peuvent pas être repris pour des raisons d'hygiène. Le détail est dans les conditions de vente." },
+    { "question": "Que devient mon panier si je ferme la page ?", "reponse": "Il reste dans la mémoire de votre navigateur, sur votre appareil, pour que vous le retrouviez à votre retour. Il n'est envoyé nulle part. Ce n'est pas un cookie et il ne sert à aucun suivi." },
+    { "question": "Faites-vous des coffrets personnalisés ?", "reponse": "Pour une entreprise ou un mariage, écrivez-nous et nous composerons un coffret avec vous. Les trois coffrets du catalogue sont préparés toute l'année." }
+  ]
+}

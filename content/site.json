@@ -1,0 +1,35 @@
+{
+  "nom": "Marée Salée",
+  "slogan": "Épicerie fine bretonne à Rennes",
+  "metier": "Épicerie fine · Rennes",
+  "rue": "12 rue du Beurre-Salé",
+  "codePostalVille": "35000 Rennes",
+  "ville": "Rennes",
+  "telephone": "02 00 00 00 00",
+  "telephoneLien": "+33200000000",
+  "email": "bonjour@maree-salee.example",
+  "mentionAdresse": "(adresse fictive)",
+  "bandeau": "Site de démonstration réalisé par BALD : boutique fictive, aucune vente possible.",
+  "lienBald": "https://www.votre-domaine.fr/",
+  "piedDemo": "Site de démonstration réalisé par BALD, création de sites web à Rennes. Boutique fictive : aucune commande, aucun paiement. Ce site n'utilise aucun cookie.",
+  "indexation": false,
+  "devise": "EUR",
+  "livraison": {
+    "frais": 5.9,
+    "seuilOffert": 60,
+    "delai": "2 à 3 jours ouvrés",
+    "retraitDelai": "Prêt en 2 heures, du mardi au samedi"
+  },
+  "horaires": [
+    { "jours": "Mardi au samedi", "heures": "9 h 30 à 19 h" },
+    { "jours": "Dimanche", "heures": "9 h à 13 h" },
+    { "jours": "Lundi", "heures": "Fermé" }
+  ],
+  "navigation": [
+    { "fichier": "catalogue.html", "label": "L'épicerie" },
+    { "fichier": "catalogue.html#coffrets", "label": "Coffrets cadeaux" },
+    { "fichier": "a-propos.html", "label": "Notre maison" },
+    { "fichier": "livraison-retours.html", "label": "Livraison et retrait" },
+    { "fichier": "actualites.html", "label": "Actualités" }
+  ]
+}

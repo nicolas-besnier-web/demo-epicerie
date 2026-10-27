@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+{{robots}}
+<meta name="theme-color" content="#1c2a31">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body class="{{classePage}}">
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+{{tete}}
+<main id="contenu">
+{{contenu}}
+</main>
+{{pied}}
+{{tiroir}}
+{{donnees}}
+<script src="js/main.js" defer></script>
+<script src="js/boutique.js" defer></script>
+{{scripts}}
+</body>
+</html>

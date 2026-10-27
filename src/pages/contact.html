@@ -1,0 +1,32 @@
+---
+title: Contact | Marée Salée (démonstration)
+description: Coordonnées fictives et horaires de la boutique Marée Salée, à Rennes. Site de démonstration.
+---
+<div class="entete-page">
+  <div class="conteneur">
+    <p class="surtitre">Nous écrire, nous appeler</p>
+    <h1>Contact</h1>
+    <p class="chapeau">Toutes les coordonnées ci-dessous sont fictives : la boutique n'existe pas.</p>
+  </div>
+</div>
+<section class="bloc">
+  <div class="conteneur contact-grille">
+    <div>
+      <h2>La boutique</h2>
+      <address>{{site.rue}}<br>{{site.codePostalVille}} <span>{{site.mentionAdresse}}</span></address>
+      <p>Téléphone : {{site.telephone}} (numéro fictif)<br>E-mail : {{site.email}} (adresse fictive)</p>
+      <h2>Horaires</h2>
+      {{horaires}}
+    </div>
+    <div>
+      <h2>Un message pour la boutique</h2>
+      <form class="demo-form" data-demo-form novalidate>
+        <div class="champ"><label for="c-nom">Votre nom</label><input id="c-nom" name="nom" autocomplete="name"></div>
+        <div class="champ"><label for="c-mail">Votre e-mail</label><input id="c-mail" name="mail" type="email" autocomplete="email" inputmode="email"></div>
+        <div class="champ"><label for="c-msg">Votre message</label><textarea id="c-msg" name="msg" rows="5"></textarea></div>
+        <button class="bouton" type="submit">Envoyer (démonstration)</button>
+        <p class="demo-retour" data-demo-retour role="status" hidden>Ceci est un site de démonstration : aucun message n'est envoyé.</p>
+      </form>
+    </div>
+  </div>
+</section>

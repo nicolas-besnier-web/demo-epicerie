@@ -1,0 +1,9 @@
+<div class="bandeau-demo" role="note"><p>{{site.bandeau}} <a href="{{site.lienBald}}">Voir le site de BALD</a></p></div>
+<header class="site-tete">
+  <div class="conteneur tete-grille">
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="nav">{{icone:menu}}<span>Menu</span></button>
+    <a class="marque" href="index.html" aria-label="{{site.nom}}, accueil">{{logo}}<span class="marque-nom">{{site.nom}}</span><span class="marque-metier">{{site.metier}}</span></a>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><ul>{{nav}}</ul></nav>
+    <a class="panier-lien" href="panier.html" data-panier-lien>{{icone:sac}}<span class="panier-texte">Panier</span><span class="panier-nb" data-panier-nb aria-hidden="true">0</span><span class="visuellement-cache" data-panier-annonce role="status"></span></a>
+  </div>
+</header>

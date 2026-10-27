@@ -1,0 +1,11 @@
+{
+  "name": "demo-epicerie",
+  "private": true,
+  "type": "module",
+  "description": "Site de démonstration BALD : boutique d'épicerie fine fictive à Rennes (offre Boutique)",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs && python3 -m http.server 8000 --directory dist"
+  },
+  "engines": { "node": ">=18" }
+}

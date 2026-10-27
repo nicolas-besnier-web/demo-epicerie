@@ -1,0 +1,121 @@
+# Configuration Pages CMS (https://pagescms.org) : permet au commerçant de modifier produits, prix,
+# photos, catégories et actualités sans toucher au code. Chaque enregistrement relance le build Netlify.
+media:
+  input: assets/img
+  output: /assets/img
+content:
+  - name: produits
+    label: Produits et catégories
+    type: file
+    path: content/produits.json
+    format: json
+    fields:
+      - name: categories
+        label: Catégories (rayons)
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Identifiant (lettres minuscules et tirets, ne pas changer après création), type: string }
+          - { name: titre, label: Nom affiché, type: string }
+          - { name: intro, label: Phrase d'introduction, type: string }
+          - { name: image, label: Photo du rayon, type: image }
+          - { name: alt, label: Description de la photo, type: string }
+      - name: produits
+        label: Produits
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Identifiant (lettres minuscules et tirets, ne pas changer après création), type: string }
+          - { name: categorie, label: Catégorie (identifiant du rayon), type: string }
+          - { name: nom, label: Nom, type: string }
+          - { name: accroche, label: Phrase d'accroche, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: prix, label: Prix TTC en euros, type: number }
+          - { name: poidsG, label: Poids net en grammes (vide pour un coffret), type: number }
+          - { name: format, label: Format affiché (ex. Pot de 220 g), type: string }
+          - { name: contenu, label: Contenu du coffret (une ligne par produit), type: string, list: true }
+          - { name: ingredients, label: Ingrédients (mettre les allergènes entre ** **, ex. **lait**), type: text }
+          - { name: allergenes, label: Allergènes (ou Aucun), type: string }
+          - { name: sansGluten, label: Recette sans gluten, type: boolean }
+          - { name: conservation, label: Conservation, type: string }
+          - { name: image, label: Photo, type: image }
+          - { name: alt, label: Description de la photo, type: string }
+          - { name: momentane, label: Mis en avant sur l'accueil, type: boolean }
+          - { name: associes, label: Produits associés (identifiants), type: string, list: true }
+  - name: actualites
+    label: Actualités
+    type: file
+    path: content/actualites.json
+    format: json
+    fields:
+      - name: actualites
+        label: Actualités
+        type: object
+        list: true
+        fields:
+          - { name: date, label: Date, type: date }
+          - { name: titre, label: Titre, type: string }
+          - { name: texte, label: Texte, type: text }
+          - { name: image, label: Image, type: image }
+          - { name: alt, label: Description de l'image, type: string }
+  - name: site
+    label: Boutique, livraison et horaires
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: nom, label: Nom de la boutique, type: string }
+      - { name: slogan, label: Slogan, type: string }
+      - { name: rue, label: Rue, type: string }
+      - { name: codePostalVille, label: Code postal et ville, type: string }
+      - { name: telephone, label: Téléphone, type: string }
+      - { name: telephoneLien, label: Téléphone au format international sans espaces, type: string }
+      - { name: email, label: E-mail, type: string }
+      - { name: bandeau, label: Bandeau en haut de page, type: string }
+      - { name: indexation, label: Autoriser les moteurs de recherche (désactivé pour une démo), type: boolean }
+      - name: livraison
+        label: Livraison
+        type: object
+        fields:
+          - { name: frais, label: Frais de livraison en euros, type: number }
+          - { name: seuilOffert, label: Livraison offerte à partir de (euros), type: number }
+          - { name: delai, label: Délai de livraison, type: string }
+          - { name: retraitDelai, label: Délai de retrait en boutique, type: string }
+      - name: horaires
+        label: Horaires
+        type: object
+        list: true
+        fields:
+          - { name: jours, label: Jours, type: string }
+          - { name: heures, label: Heures, type: string }
+  - name: faq
+    label: Questions fréquentes
+    type: file
+    path: content/faq.json
+    format: json
+    fields:
+      - name: questions
+        label: Questions
+        type: object
+        list: true
+        fields:
+          - { name: question, label: Question, type: string }
+          - { name: reponse, label: Réponse, type: text }
+  - name: credits
+    label: Crédits des photos (obligatoire pour chaque photo)
+    type: file
+    path: content/credits.json
+    format: json
+    fields:
+      - name: credits
+        label: Crédits
+        type: object
+        list: true
+        fields:
+          - { name: fichier, label: Fichier (ex. assets/img/photo.jpg), type: string }
+          - { name: description, label: Description, type: string }
+          - { name: auteur, label: Photographe, type: string }
+          - { name: source, label: Site source, type: string }
+          - { name: lien, label: Lien vers la photo, type: string }
+          - { name: licence, label: Licence, type: string }
+          - { name: licenceLien, label: Lien vers la licence, type: string }

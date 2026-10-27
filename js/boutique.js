@@ -70,7 +70,7 @@
     var n = nombre(panier);
     if (elNb) {
       elNb.textContent = String(n);
-      elNb.setAttribute("data-vide", n === 0 ? "1" : "0");
+      elNb.setAttribute("data-zero", n === 0 ? "1" : "0");
       if (n > dernierNb && !reduit) { elNb.classList.remove("bump"); void elNb.offsetWidth; elNb.classList.add("bump"); }
     }
     if (elLien) elLien.setAttribute("aria-label", n === 0 ? "Panier, vide" : "Panier, " + n + (n > 1 ? " articles" : " article") + ", " + euro.format(sousTotal(panier)));

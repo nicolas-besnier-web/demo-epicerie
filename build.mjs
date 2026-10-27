@@ -226,7 +226,6 @@ function ficheProduit(p) {
       <p class="fiche-credit">Photo d'illustration. <a href="mentions-legales.html#credits">Crédits</a></p>
     </div>
     <div class="fiche-infos">
-      <p class="produit-cat">${esc(cat.titre)}</p>
       <h1>${esc(p.nom)}</h1>
       <p class="fiche-accroche">${esc(p.accroche || "")}</p>
       <div class="fiche-prix">
